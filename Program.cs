@@ -12,4 +12,10 @@ namespace Product
         {
         }
     }
+    public class Stock
+    {
+        public int StockId { get; set; }
+        public string Address { get; set; }
+        public int CountOfFull { get; set; }
+    }
 }

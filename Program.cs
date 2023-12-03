@@ -12,7 +12,7 @@ namespace Product
         private string Login { get; set; } // поле логина покупателя
         private string Password { get; set; } // поле пароля покупателя
 
-        public void SetLoginNPassword(string login, int password)
+        public void SetLoginNPassword(string login, string password)
         {
             const int minSizeOfPassword = 8;
             Login = login;

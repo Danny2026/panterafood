@@ -9,6 +9,12 @@ namespace Product
         public int ProductPrice { get; set; }
         public int ProductWeight { get; set; }
 
+        public void SetPrice(int price)
+        {
+            if (price >= 0)
+                ProductPrice = price;
+            else Console.WriteLine("Цена не может быть отрицательной");
+        }
     }
 
     internal class Program

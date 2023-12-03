@@ -15,6 +15,13 @@ namespace Product
                 ProductPrice = price;
             else Console.WriteLine("Цена не может быть отрицательной");
         }
+
+        public void SetWeight(int weight)
+        {
+            if (weight >= 0)
+                ProductWeight = weight;
+            else Console.WriteLine("Вес не может быть отрицательным");
+        }
     }
 
     internal class Program

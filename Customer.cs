@@ -11,6 +11,12 @@ namespace Product
         public int CardNum { get; set; }
         private string Login { get; set; }
         private string Password { get; set; }
+
+        public void SetLoginNPassword(string login, int password)
+        {
+            Login = login;
+            Password = password;
+        }
     }
 
     class Program

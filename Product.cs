@@ -4,10 +4,10 @@ namespace Product
 {
     public class Product
     {
-        public int ProductID { get; set; }
-        public string ProductName { get; set; }
-        public int ProductPrice { get; set; }
-        public int ProductWeight { get; set; }
+        public int ProductID { get; set; }          // Уникальный идентификатор продукта
+        public string ProductName { get; set; }     // Наименование продукта
+        public int ProductPrice { get; set; }       // Цена продукта
+        public int ProductWeight { get; set; }      // Вес продукта
 
         public void SetPrice(int price)
         {

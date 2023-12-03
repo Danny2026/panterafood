@@ -17,15 +17,8 @@ namespace Product
     public class Stock
     {
         public int StockId { get; set; } // Поле ID товара
-        public string Address { get; set; } // Поле адреса
+        public string Adress { get; set; } // Поле адреса
         public int CountOfFull { get; set; } // Поле количества товара на складе
-        public void CountCheck() // Метод проверки наличия
-        {
-            if (CountOfFull == 0) 
-            {
-                Console.WriteLine("Данного товара нет на складе")
-            }
-        }
     }
 }
 =======

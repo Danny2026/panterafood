@@ -6,7 +6,7 @@ namespace Product
     {
         public int StockId { get; set; } // Поле ID товара
         public string Adress { get; set; } // Поле адреса
-        public int CountOfFull { get; set; } // Поле количества товара на складе
+        public int CountOfFull { get; set; } // Поле кол-ва товара на складе
     }
 
 

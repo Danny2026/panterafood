@@ -12,10 +12,15 @@ namespace Product
         private string Login { get; set; }
         private string Password { get; set; }
 
-        public void SetLoginNPassword(string login, int password)
+        public void SetLoginNPassword(string login, string password)
         {
+            const int minSizeOfPassword = 8;
             Login = login;
-            Password = password;
+            if (password.Length > minSizeOfPassword)
+            {
+                Password = password;
+            }
+            else Console.WriteLine("Пароль должен состоять минимум из 8 цифр");
         }
     }
 

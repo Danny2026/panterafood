@@ -4,13 +4,13 @@ namespace Product
 {
     class Customer
     {
-        public int CustomerId { get; set; }
-        public string CustomerFullName { get; set; }
-        public int CustomerPhoneNumber { get; set; }
-        public string CustomerAdress { get; set; }
-        public int CardNum { get; set; }
-        private string Login { get; set; }
-        private string Password { get; set; }
+        public int CustomerId { get; set; } // поле id для покупателя
+        public string CustomerFullName { get; set; } // поле ФИО покупателя
+        public int CustomerPhoneNumber { get; set; } // поле номера телефона покупателя
+        public string CustomerAdress { get; set; } // поле адреса доставки покупателя
+        public int CardNum { get; set; } // поле номера карты покупателя
+        private string Login { get; set; } // поле логина покупателя
+        private string Password { get; set; } // поле пароля покупателя
 
         public void SetLoginNPassword(string login, string password)
         {
